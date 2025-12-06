@@ -4,6 +4,13 @@ body {
   font-family: Verdana, sans-serif;
 }
 
-img {
-  width: 20em;
+
+.grid-gallery {
+  --size: 100px;
+  display: grid;
+  grid-template-columns: repeat(6, var(--size));
+  grid-auto-rows: var(--size);
+  gap: 5px;
+  place-items: start center;
+  margin-bottom: var(--size);
 }
